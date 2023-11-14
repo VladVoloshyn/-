@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Knife>
+    <Type>Sword</Type>
+    <Handy>One-hand</Handy>
+    <Origin>US</Origin>
+    <Value>Collection</Value>
+    <Visual>
+        <Blade>
+            <Length>15</Length>
+            <Width>20</Width>
+            <Material>Steel</Material>
+        </Blade>
+        <Handle>
+            <Type>Stone</Type>
+        </Handle>
+        <BloodGroove>No</BloodGroove>
+    </Visual>
+</Knife>

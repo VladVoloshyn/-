@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Knife">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Type" type="xs:string"/>
+                <xs:element name="Handy" type="xs:string"/>
+                <xs:element name="Origin" type="xs:string"/>
+                <xs:element name="Value" type="xs:string"/>
+                <xs:element name="Visual" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Blade" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Length" type="xs:integer"/>
+                                        <xs:element name="Width" type="xs:integer"/>
+                                        <xs:element name="Material" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Handle">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Type" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="BloodGroove" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
